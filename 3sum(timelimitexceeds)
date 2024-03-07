@@ -1,0 +1,17 @@
+from itertools import combinations
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        l=[]
+        k=set(combinations(nums,3))
+        for i in k:
+            if sum(list(i))==0:
+                l.append(sorted(list(i)))
+        z = set()
+        b = []
+        for j in l:
+            y= tuple(j)
+            if y not in z:
+                z.add(y)
+                b.append(j)
+        return (b)
+        
