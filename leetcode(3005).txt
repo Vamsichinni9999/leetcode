@@ -1,0 +1,9 @@
+3005. Count Elements With Maximum Frequency
+class Solution:
+    def maxFrequencyElements(self, nums: List[int]) -> int:
+        l=[]
+        for i in range(len(nums)):
+            l.append(nums.count(nums[i]))
+        m=max(l)
+        return (l.count(m))
+        
