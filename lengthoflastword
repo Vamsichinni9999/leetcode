@@ -1,0 +1,6 @@
+s="hello world"
+l=[]
+m=s.split()
+for i in m:
+    l.append(len(i))
+print(l[-1])
