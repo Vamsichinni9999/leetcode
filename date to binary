@@ -1,0 +1,39 @@
+date = "1900-01-01"
+l=[]
+for i in date:
+    l.append(i)
+year=[]
+for i in l[:4]:
+    year.append(i)
+m="".join(map(str,year))
+month=[]
+for i in l[5:7]:
+    month.append(i)
+q="".join(map(str,month))
+day=[]
+for i in l[8:]:
+    day.append(i)
+w="".join(map(str,day))
+v=bin(int(m))
+z=bin(int(q))
+s=bin(int(w))
+p=[]
+for i in str(v):
+    p.append(i)
+x=p[2:]
+y="".join(map(str,x))
+u=[]
+for i in str(z):
+    u.append(i)
+d=u[2:]
+b="".join(map(str,d))
+t=[]
+for i in str(s):
+    t.append(i)
+h=t[2:]
+f="".join(map(str,h))
+g=y,"-",b,"-",f
+k="".join(map(str,g))
+print(k)
+
+    
